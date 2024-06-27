@@ -39,7 +39,7 @@ st.markdown("<h1 style='text-align: center;'>Las memorias de Francisco</h1>", un
 # Sin embargo, establecer unsafe_allow_html en True permite el uso de HTML.
 
 # Creamos dos columnas separadas para la imagen y el texto
-col1, col2 = st.columns(2)
+# col1, col2 = st.columns(2)
 
 # col1, col2 = st.columns(2): Esta línea está creando dos columnas en la interfaz de usuario de la aplicación web. 
 # La función st.columns toma un número entero como argumento que especifica el número de columnas que se deben crear. 
@@ -64,7 +64,7 @@ Holo mi nombre es Francisco, estudio periodismo me gusta el futbol soy hincha de
 
 # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
 # Mostramos el texto
-col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
+st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
 
 # <div style='text-align: justify; font-size: 15px;'>{texto}</div>: Esta es una cadena de código HTML. 
 # La etiqueta <div> se utiliza para agrupar contenido en HTML. 
